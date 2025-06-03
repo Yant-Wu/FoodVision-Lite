@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+model/
+*.pth
+data/
+*.log
+.streamlit/
+.DS_Store
+Thumbs.db
+*.pyc
