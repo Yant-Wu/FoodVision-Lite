@@ -23,7 +23,7 @@ def get_best_device():
     system = platform.system()
     processor = platform.processor().lower()
 
-    if system == "Darwin" and "apple" in processor and torch.backends.mps.is_available():
+    if torch.backends.mps.is_available():
         print("🔧 檢測到 Apple Silicon，啟用 Metal (MPS)")
         return torch.device("mps")
     elif torch.cuda.is_available():
