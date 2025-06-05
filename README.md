@@ -17,6 +17,8 @@ python train.py
 ```
 訓練完成後，模型會儲存於 `model/food_model.pth`。
 
+> 注意：此模型僅修改了分類層面，使用預訓練模型的特徵提取部分，並在最後的分類層進行微調以適配 Food101 資料集。
+
 ### 2. 啟動應用程式
 執行 `app.py` 啟動 Streamlit 應用程式：
 ```bash
